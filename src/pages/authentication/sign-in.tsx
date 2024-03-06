@@ -5,16 +5,6 @@ import type { FC } from "react";
 const SignInPage: FC = function () {
   return (
     <div className="flex flex-col items-center justify-center px-6 lg:h-screen lg:gap-y-12">
-      <div className="my-6 flex items-center gap-x-1 lg:my-0">
-        <img
-          alt="Flowbite logo"
-          src="https://flowbite.com/docs/images/logo.svg"
-          className="mr-3 h-12"
-        />
-        <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
-          Flowbite
-        </span>
-      </div>
       <Card
         horizontal
         imgSrc="/images/authentication/login.jpg"
