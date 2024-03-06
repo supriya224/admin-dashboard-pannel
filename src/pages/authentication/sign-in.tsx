@@ -4,6 +4,7 @@ import type { FC } from "react";
 
 const SignInPage: FC = function () {
   return (
+    // sign in page 
     <div className="flex flex-col items-center justify-center px-6 lg:h-screen lg:gap-y-12">
       <Card
         horizontal

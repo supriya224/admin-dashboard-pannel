@@ -23,8 +23,8 @@ import {
   HiUpload,
 } from "react-icons/hi";
 import NavbarSidebarLayout from "../../layouts/navbar-sidebar";
-// import { Pagination } from "../users/list";
 
+// ecommerec product page code is here
 const EcommerceProductsPage: FC = function () {
   return (
     <NavbarSidebarLayout isFooter={false}>
@@ -99,6 +99,7 @@ const EcommerceProductsPage: FC = function () {
   );
 };
 
+// searching for products code 
 const SearchForProducts: FC = function () {
   return (
     <form className="mb-4 sm:mb-0 sm:pr-3" action="#" method="GET">
@@ -115,7 +116,7 @@ const SearchForProducts: FC = function () {
     </form>
   );
 };
-
+// add user model as like userlist code is here
 const AddProductModal: FC = function () {
   const [isOpen, setOpen] = useState(false);
 
@@ -208,6 +209,7 @@ const AddProductModal: FC = function () {
   );
 };
 
+// edit products model code is here 
 const EditProductModal: FC = function () {
   const [isOpen, setOpen] = useState(false);
 
@@ -335,6 +337,7 @@ const EditProductModal: FC = function () {
   );
 };
 
+// delete product code is here
 const DeleteProductModal: FC = function () {
   const [isOpen, setOpen] = useState(false);
 
@@ -369,6 +372,7 @@ const DeleteProductModal: FC = function () {
   );
 };
 
+// all products table which u can add into table
 const ProductsTable: FC = function () {
   return (
     <Table className="min-w-full divide-y divide-gray-200 dark:divide-gray-600">

@@ -1,6 +1,9 @@
 import type { FC } from "react";
 import { DarkThemeToggle, Navbar } from "flowbite-react";
+// import SignUpPage from "../pages/authentication/sign-up";
 
+
+// main header is there
 const ExampleNavbar: FC = function () {
   return (
     <Navbar fluid>

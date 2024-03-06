@@ -23,6 +23,7 @@ import {
 } from "react-icons/hi";
 import NavbarSidebarLayout from "../../layouts/navbar-sidebar";
 
+// user list page is there 
 const UserListPage: FC = function () {
   return (
     <NavbarSidebarLayout isFooter={false}>
@@ -114,6 +115,7 @@ const UserListPage: FC = function () {
   );
 };
 
+// add user model is there 
 const AddUserModal: FC = function () {
   const [isOpen, setOpen] = useState(false);
 
@@ -201,6 +203,7 @@ const AddUserModal: FC = function () {
   );
 };
 
+// add all user table code is here
 const AllUsersTable: FC = function () {
   return (
     <Table className="min-w-full divide-y divide-gray-200 dark:divide-gray-600">
@@ -507,6 +510,7 @@ const AllUsersTable: FC = function () {
   );
 };
 
+// edit button code is there u can edit to it
 const EditUserModal: FC = function () {
   const [isOpen, setOpen] = useState(false);
 
@@ -616,9 +620,10 @@ const EditUserModal: FC = function () {
   );
 };
 
+// delete user  code is there
 const DeleteUserModal: FC = function () {
   const [isOpen, setOpen] = useState(false);
-
+// doilog box is there will be open
   return (
     <>
       <Button color="failure" onClick={() => setOpen(true)}>
