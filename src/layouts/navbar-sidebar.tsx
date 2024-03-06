@@ -4,8 +4,6 @@ import Navbar from "../components/navbar";
 import Sidebar from "../components/sidebar";
 import { MdFacebook } from "react-icons/md";
 import { FaDribbble, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
-
-
 // all alyout import there 
 interface NavbarSidebarLayoutProps {
   isFooter?: boolean;
@@ -24,8 +22,6 @@ const NavbarSidebarLayout: FC<PropsWithChildren<NavbarSidebarLayoutProps>> =
       </>
     );
   };
-
-
 const MainContent: FC<PropsWithChildren<NavbarSidebarLayoutProps>> = function ({
   children,
   isFooter,
@@ -41,7 +37,7 @@ const MainContent: FC<PropsWithChildren<NavbarSidebarLayoutProps>> = function ({
     </main>
   );
 };
-  //here are footer items and all links are there but these are static page
+//here are footer items and all links are there but these are static page
 const MainContentFooter: FC = function () {
   return (
     <>

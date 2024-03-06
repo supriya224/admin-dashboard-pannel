@@ -99,7 +99,7 @@ const EcommerceProductsPage: FC = function () {
   );
 };
 
-// searching for products code 
+// searching for products code
 const SearchForProducts: FC = function () {
   return (
     <form className="mb-4 sm:mb-0 sm:pr-3" action="#" method="GET">
@@ -138,25 +138,25 @@ const AddProductModal: FC = function () {
                 <TextInput
                   id="productName"
                   name="productName"
-                  placeholder='Apple iMac 27"'
+                  placeholder='Anything '
                   className="mt-1"
                 />
               </div>
               <div>
-                <Label htmlFor="category">Category</Label>
+                <Label htmlFor="category">Technology</Label>
                 <TextInput
                   id="category"
                   name="category"
-                  placeholder="Electronics"
+                  placeholder="React"
                   className="mt-1"
                 />
               </div>
               <div>
-                <Label htmlFor="brand">Brand</Label>
+                <Label htmlFor="brand">Next Meeting</Label>
                 <TextInput
                   id="brand"
                   name="brand"
-                  placeholder="Apple"
+                  placeholder="Timing"
                   className="mt-1"
                 />
               </div>
@@ -169,32 +169,6 @@ const AddProductModal: FC = function () {
                   placeholder="$2300"
                   className="mt-1"
                 />
-              </div>
-              <div className="lg:col-span-2">
-                <Label htmlFor="producTable.Celletails">Product details</Label>
-                <Textarea
-                  id="producTable.Celletails"
-                  name="producTable.Celletails"
-                  placeholder="e.g. 3.8GHz 8-core 10th-generation Intel Core i7 processor, Turbo Boost up to 5.0GHz, Ram 16 GB DDR4 2300Mhz"
-                  rows={6}
-                  className="mt-1"
-                />
-              </div>
-              <div className="lg:col-span-2">
-                <div className="flex w-full items-center justify-center">
-                  <label className="flex h-32 w-full cursor-pointer flex-col rounded border-2 border-dashed border-gray-300 hover:bg-gray-50 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-700">
-                    <div className="flex flex-col items-center justify-center pt-5 pb-6">
-                      <HiUpload className="text-4xl text-gray-300" />
-                      <p className="py-1 text-sm text-gray-600 dark:text-gray-500">
-                        Upload a file or drag and drop
-                      </p>
-                      <p className="text-xs text-gray-500 dark:text-gray-400">
-                        PNG, JPG, GIF up to 10MB
-                      </p>
-                    </div>
-                    <input type="file" className="hidden" />
-                  </label>
-                </div>
               </div>
             </div>
           </form>
@@ -209,7 +183,7 @@ const AddProductModal: FC = function () {
   );
 };
 
-// edit products model code is here 
+// edit products model code is here
 const EditProductModal: FC = function () {
   const [isOpen, setOpen] = useState(false);
 
@@ -231,25 +205,25 @@ const EditProductModal: FC = function () {
                 <TextInput
                   id="productName"
                   name="productName"
-                  placeholder='Apple iMac 27"'
+                  placeholder="anything"
                   className="mt-1"
                 />
               </div>
               <div>
-                <Label htmlFor="category">Category</Label>
+                <Label htmlFor="category">Technology</Label>
                 <TextInput
                   id="category"
                   name="category"
-                  placeholder="Electronics"
+                  placeholder="React"
                   className="mt-1"
                 />
               </div>
               <div>
-                <Label htmlFor="brand">Brand</Label>
+                <Label htmlFor="brand">Next Meeting</Label>
                 <TextInput
                   id="brand"
                   name="brand"
-                  placeholder="Apple"
+                  placeholder="timing"
                   className="mt-1"
                 />
               </div>
@@ -262,67 +236,6 @@ const EditProductModal: FC = function () {
                   placeholder="$2300"
                   className="mt-1"
                 />
-              </div>
-              <div className="lg:col-span-2">
-                <Label htmlFor="productDetails">Product details</Label>
-                <Textarea
-                  id="productDetails"
-                  name="productDetails"
-                  placeholder="e.g. 3.8GHz 8-core 10th-generation Intel Core i7 processor, Turbo Boost up to 5.0GHz, Ram 16 GB DDR4 2300Mhz"
-                  rows={6}
-                  className="mt-1"
-                />
-              </div>
-              <div className="flex space-x-5">
-                <div>
-                  <img
-                    alt="Apple iMac 1"
-                    src="/images/products/apple-imac-1.png"
-                    className="h-24"
-                  />
-                  <a href="#" className="cursor-pointer">
-                    <span className="sr-only">Delete</span>
-                    <HiTrash className="-mt-5 text-2xl text-red-600" />
-                  </a>
-                </div>
-                <div>
-                  <img
-                    alt="Apple iMac 2"
-                    src="/images/products/apple-imac-2.png"
-                    className="h-24"
-                  />
-                  <a href="#" className="cursor-pointer">
-                    <span className="sr-only">Delete</span>
-                    <HiTrash className="-mt-5 text-2xl text-red-600" />
-                  </a>
-                </div>
-                <div>
-                  <img
-                    alt="Apple iMac 3"
-                    src="/images/products/apple-imac-3.png"
-                    className="h-24"
-                  />
-                  <a href="#" className="cursor-pointer">
-                    <span className="sr-only">Delete</span>
-                    <HiTrash className="-mt-5 text-2xl text-red-600" />
-                  </a>
-                </div>
-              </div>
-              <div className="lg:col-span-2">
-                <div className="flex w-full items-center justify-center">
-                  <label className="flex h-32 w-full cursor-pointer flex-col rounded border-2 border-dashed border-gray-300 hover:bg-gray-50 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-700">
-                    <div className="flex flex-col items-center justify-center pt-5 pb-6">
-                      <HiUpload className="text-4xl text-gray-300" />
-                      <p className="py-1 text-sm text-gray-600 dark:text-gray-500">
-                        Upload a file or drag and drop
-                      </p>
-                      <p className="text-xs text-gray-500 dark:text-gray-400">
-                        PNG, JPG, GIF up to 10MB
-                      </p>
-                    </div>
-                    <input type="file" className="hidden" />
-                  </label>
-                </div>
               </div>
             </div>
           </form>
@@ -383,7 +296,7 @@ const ProductsTable: FC = function () {
         </Table.HeadCell>
         <Table.HeadCell>Product Name</Table.HeadCell>
         <Table.HeadCell>Technology</Table.HeadCell>
-        <Table.HeadCell>ID</Table.HeadCell>
+        <Table.HeadCell>Next Meeting</Table.HeadCell>
         <Table.HeadCell>Price</Table.HeadCell>
         <Table.HeadCell>Actions</Table.HeadCell>
       </Table.Head>
@@ -394,7 +307,7 @@ const ProductsTable: FC = function () {
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-sm font-normal text-gray-500 dark:text-gray-400">
             <div className="text-base font-semibold text-gray-900 dark:text-white">
-              Education Dashboard
+              Wix
             </div>
             <div className="text-sm font-normal text-gray-500 dark:text-gray-400">
               Html templates
@@ -403,8 +316,8 @@ const ProductsTable: FC = function () {
           <Table.Cell className="whitespace-nowrap p-4 text-base font-medium text-gray-900 dark:text-white">
             Angular
           </Table.Cell>
-          <Table.Cell className="whitespace-nowrap p-4 text-base font-medium text-gray-900 dark:text-white">
-            #194556
+          <Table.Cell className="whitespace-nowrap rounded-xl p-4 text-base font-medium text-gray-900 dark:text-white">
+            next 30 min
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-base font-medium text-gray-900 dark:text-white">
             $149
@@ -422,7 +335,7 @@ const ProductsTable: FC = function () {
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-sm font-normal text-gray-500 dark:text-gray-400">
             <div className="text-base font-semibold text-gray-900 dark:text-white">
-              React UI Kit
+              Shopify
             </div>
             <div className="text-sm font-normal text-gray-500 dark:text-gray-400">
               Html templates
@@ -432,7 +345,7 @@ const ProductsTable: FC = function () {
             React JS
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-base font-medium text-gray-900 dark:text-white">
-            #623232
+            Tommorrow
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-base font-medium text-gray-900 dark:text-white">
             $129
@@ -450,7 +363,7 @@ const ProductsTable: FC = function () {
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-sm font-normal text-gray-500 dark:text-gray-400">
             <div className="text-base font-semibold text-gray-900 dark:text-white">
-              Education Dashboard
+              Disney
             </div>
             <div className="text-sm font-normal text-gray-500 dark:text-gray-400">
               Html templates
@@ -460,7 +373,7 @@ const ProductsTable: FC = function () {
             Angular
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-base font-medium text-gray-900 dark:text-white">
-            #194356
+            Tommorrow
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-base font-medium text-gray-900 dark:text-white">
             $149
@@ -478,7 +391,7 @@ const ProductsTable: FC = function () {
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-sm font-normal text-gray-500 dark:text-gray-400">
             <div className="text-base font-semibold text-gray-900 dark:text-white">
-              React UI Kit
+              Paypal
             </div>
             <div className="text-sm font-normal text-gray-500 dark:text-gray-400">
               Html templates
@@ -488,7 +401,7 @@ const ProductsTable: FC = function () {
             React JS
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-base font-medium text-gray-900 dark:text-white">
-            #323323
+            In 6 hours
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-base font-medium text-gray-900 dark:text-white">
             $129
@@ -506,7 +419,7 @@ const ProductsTable: FC = function () {
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-sm font-normal text-gray-500 dark:text-gray-400">
             <div className="text-base font-semibold text-gray-900 dark:text-white">
-              Education Dashboard
+              Google
             </div>
             <div className="text-sm font-normal text-gray-500 dark:text-gray-400">
               Html templates
@@ -516,7 +429,7 @@ const ProductsTable: FC = function () {
             Angular
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-base font-medium text-gray-900 dark:text-white">
-            #994856
+            No contact
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-base font-medium text-gray-900 dark:text-white">
             $149
@@ -534,7 +447,7 @@ const ProductsTable: FC = function () {
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-sm font-normal text-gray-500 dark:text-gray-400">
             <div className="text-base font-semibold text-gray-900 dark:text-white">
-              Education Dashboard
+              MicroSoft
             </div>
             <div className="text-sm font-normal text-gray-500 dark:text-gray-400">
               Html templates
@@ -544,7 +457,7 @@ const ProductsTable: FC = function () {
             Angular
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-base font-medium text-gray-900 dark:text-white">
-            #194256
+            Tommorrow
           </Table.Cell>
           <Table.Cell className="whitespace-nowrap p-4 text-base font-medium text-gray-900 dark:text-white">
             $149
