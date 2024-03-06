@@ -14,7 +14,7 @@ interface CustomSidebarProps extends SidebarProps {
 const ExampleSidebar: FC<CustomSidebarProps> = function () {
   const [currentPage, setCurrentPage] = useState("");
   // eslint-disable-next-line no-unused-vars
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   useEffect(() => {
     const newPage = window.location.pathname;
@@ -28,62 +28,61 @@ const ExampleSidebar: FC<CustomSidebarProps> = function () {
 
   return (
     <div className="relative">
-      <Sidebar aria-label="Sidebar with multi-level dropdown example">
-        <div className="sm:none flex h-full flex-col justify-between py-2">
-          <div>
-            <Sidebar.Items>
-              <span
-                className="flex cursor-pointer justify-end md:hidden lg:hidden xl:hidden"
-                onClick={toggleSidebar}
-              >
-                X
-              </span>
-              <Sidebar.ItemGroup>
-                <Sidebar.Item
-                  href="/"
-                  icon={HiChartPie}
-                  className={
-                    "/" === currentPage ? "bg-gray-100 dark:bg-gray-700" : ""
-                  }
+      {open && (
+        <Sidebar aria-label="Sidebar with multi-level dropdown example">
+          <div className="sm:none flex h-full flex-col justify-between py-2">
+            <div>
+              <Sidebar.Items>
+                <span
+                  className="flex cursor-pointer justify-end md:hidden lg:hidden xl:hidden"
+                  onClick={toggleSidebar}
                 >
-                  Dashboard
-                </Sidebar.Item>
-                <Sidebar.Item
-                  href="/e-commerce/products"
-                  icon={HiShoppingBag}
-                  className={
-                    "/e-commerce/products" === currentPage
-                      ? "bg-gray-100 dark:bg-gray-700"
-                      : ""
-                  }
-                >
-                  Products
-                </Sidebar.Item>
-                <Sidebar.Item
-                  href="/users/list"
-                  icon={HiUsers}
-                  className={
-                    "/users/list" === currentPage
-                      ? "bg-gray-100 dark:bg-gray-700"
-                      : ""
-                  }
-                >
-                  Users list
-                </Sidebar.Item>
-              </Sidebar.ItemGroup>
-            </Sidebar.Items>
+                  X
+                </span>
+                <Sidebar.ItemGroup>
+                  <Sidebar.Item
+                    href="/"
+                    icon={HiChartPie}
+                    className={
+                      "/" === currentPage ? "bg-gray-100 dark:bg-gray-700" : ""
+                    }
+                  >
+                    Dashboard
+                  </Sidebar.Item>
+                  <Sidebar.Item
+                    href="/e-commerce/products"
+                    icon={HiShoppingBag}
+                    className={
+                      "/e-commerce/products" === currentPage
+                        ? "bg-gray-100 dark:bg-gray-700"
+                        : ""
+                    }
+                  >
+                    Products
+                  </Sidebar.Item>
+                  <Sidebar.Item
+                    href="/users/list"
+                    icon={HiUsers}
+                    className={
+                      "/users/list" === currentPage
+                        ? "bg-gray-100 dark:bg-gray-700"
+                        : ""
+                    }
+                  >
+                    Users list
+                  </Sidebar.Item>
+                </Sidebar.ItemGroup>
+              </Sidebar.Items>
+            </div>
           </div>
-        </div>
-      </Sidebar>
-      {!open && (
-        <button
-          // eslint-disable-next-line tailwindcss/classnames-order
-          className="absolute top-9 left-0 ml-2 mt-2 p-2 rounded-md bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200"
-          onClick={toggleSidebar}
-        >
-          Open
-        </button>
+        </Sidebar>
       )}
+      <button
+        className="absolute top-0 left-0 ml-2 mt-2 rounded-md bg-gray-200 p-2 text-gray-800 dark:bg-gray-800 dark:text-gray-200"
+        onClick={toggleSidebar}
+      >
+        {open ? "Close" : "Open"}
+      </button>
     </div>
   );
 };

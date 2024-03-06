@@ -4,7 +4,7 @@ const flowbiteTheme: CustomFlowbiteTheme = {
   badge: {
     color: {
       primary:
-        "bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800 group-hover:bg-primary-200 dark:group-hover:bg-primary-300",
+        "bg-primary-800 text-primary-100 dark:bg-primary-200 dark:text-primary-800 group-hover:bg-primary-200 dark:group-hover:bg-primary-300",
     },
     icon: {
       off: "rounded-full px-2 py-1",
